@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		BFC6F1F51B210A4400FD216E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC6F1F41B210A4400FD216E /* AppDelegate.swift */; };
-		BFC6F1F71B210A4400FD216E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC6F1F61B210A4400FD216E /* ViewController.swift */; };
 		BFC6F1FA1B210A4400FD216E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFC6F1F81B210A4400FD216E /* Main.storyboard */; };
 		BFC6F1FC1B210A4400FD216E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFC6F1FB1B210A4400FD216E /* Images.xcassets */; };
 		BFC6F1FF1B210A4400FD216E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFC6F1FD1B210A4400FD216E /* LaunchScreen.xib */; };
 		BFC6F20B1B210A4400FD216E /* SpotDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC6F20A1B210A4400FD216E /* SpotDemoTests.swift */; };
+		BFC6F2151B210A6100FD216E /* SocialItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC6F2141B210A6100FD216E /* SocialItemCell.swift */; };
+		BFC6F2171B210A6E00FD216E /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC6F2161B210A6E00FD216E /* MenuViewController.swift */; };
+		BFC6F2191B2126C900FD216E /* SocialItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC6F2181B2126C900FD216E /* SocialItem.swift */; };
+		BFC6F21B1B212CC800FD216E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC6F21A1B212CC800FD216E /* DetailViewController.swift */; };
+		BFC6F21D1B21DB1300FD216E /* ZoomingIconTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC6F21C1B21DB1300FD216E /* ZoomingIconTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +33,17 @@
 		BFC6F1EF1B210A4400FD216E /* SpotDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC6F1F31B210A4400FD216E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFC6F1F41B210A4400FD216E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BFC6F1F61B210A4400FD216E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BFC6F1F91B210A4400FD216E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BFC6F1FB1B210A4400FD216E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BFC6F1FE1B210A4400FD216E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		BFC6F2041B210A4400FD216E /* SpotDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC6F2091B210A4400FD216E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFC6F20A1B210A4400FD216E /* SpotDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotDemoTests.swift; sourceTree = "<group>"; };
+		BFC6F2141B210A6100FD216E /* SocialItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialItemCell.swift; sourceTree = "<group>"; };
+		BFC6F2161B210A6E00FD216E /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		BFC6F2181B2126C900FD216E /* SocialItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialItem.swift; sourceTree = "<group>"; };
+		BFC6F21A1B212CC800FD216E /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		BFC6F21C1B21DB1300FD216E /* ZoomingIconTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomingIconTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +86,12 @@
 			isa = PBXGroup;
 			children = (
 				BFC6F1F41B210A4400FD216E /* AppDelegate.swift */,
-				BFC6F1F61B210A4400FD216E /* ViewController.swift */,
+				BFC6F2161B210A6E00FD216E /* MenuViewController.swift */,
+				BFC6F21A1B212CC800FD216E /* DetailViewController.swift */,
 				BFC6F1F81B210A4400FD216E /* Main.storyboard */,
+				BFC6F21C1B21DB1300FD216E /* ZoomingIconTransition.swift */,
+				BFC6F2141B210A6100FD216E /* SocialItemCell.swift */,
+				BFC6F2181B2126C900FD216E /* SocialItem.swift */,
 				BFC6F1FB1B210A4400FD216E /* Images.xcassets */,
 				BFC6F1FD1B210A4400FD216E /* LaunchScreen.xib */,
 				BFC6F1F21B210A4400FD216E /* Supporting Files */,
@@ -212,8 +224,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFC6F1F71B210A4400FD216E /* ViewController.swift in Sources */,
+				BFC6F2191B2126C900FD216E /* SocialItem.swift in Sources */,
 				BFC6F1F51B210A4400FD216E /* AppDelegate.swift in Sources */,
+				BFC6F21B1B212CC800FD216E /* DetailViewController.swift in Sources */,
+				BFC6F2151B210A6100FD216E /* SocialItemCell.swift in Sources */,
+				BFC6F2171B210A6E00FD216E /* MenuViewController.swift in Sources */,
+				BFC6F21D1B21DB1300FD216E /* ZoomingIconTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +427,7 @@
 				BFC6F2101B210A4400FD216E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BFC6F2111B210A4400FD216E /* Build configuration list for PBXNativeTarget "SpotDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +436,7 @@
 				BFC6F2131B210A4400FD216E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
