@@ -6,7 +6,12 @@
 //  Copyright (c) 2015 Nick Brandaleone. All rights reserved.
 //
 
-/*  This View Controller handles the map view for the cities. */
+/*  This View Controller handles the secondary views that "pops" in
+    via the custom transition.
+
+    The image from the Main/Menu VC is shown here expanded. Title and summary text
+    is slided into place using constraints based animation. */
+
 
 import UIKit
 
@@ -60,8 +65,8 @@ class DetailViewController: UIViewController, ZoomingIconViewController {
         view.layoutIfNeeded()
     }
 
-    // Once you click the circle, we push onto the navigation controller stack - the
-    // animation takes 0.6 second on push, and no delay.
+    // This optional function pushes the labels into place.
+    // Handles push/pop direction by calling "setupState" helper function.
     func zoomingIconTransition(transition: ZoomingIconTransition, willAnimateTransitionWithOperation operation: UINavigationControllerOperation, isForegroundViewController isForeground: Bool) {
         
         setupState(operation == .Push)
